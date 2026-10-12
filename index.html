@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Hazi Moinuddin Basha | Matrimonial & Academic Biodata Portfolio</title>
+  <meta name="description" content="Official Matrimonial & Professional Biodata Portfolio of Mohammad Hazi Moinuddin Basha - Assistant Professor at VIT-AP University, Amaravati (Ph.D. Scholar, M.Tech).">
+  
+  <!-- Favicon / Royal Emblem -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+  
+  <!-- Google Fonts: Royal Serif, Sans-Serif & Arabic Calligraphy -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Geometric Arabesque Pattern Overlay -->
+  <div class="islamic-pattern-overlay" aria-hidden="true"></div>
+
+  <!-- Interactive Golden Particle Canvas -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Animated Hanging Fanoos (Islamic Lanterns) -->
+  <div class="fanoos-container fanoos-left" aria-hidden="true">
+    <svg class="lantern-svg" viewBox="0 0 60 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="30" y1="0" x2="30" y2="25" stroke="#d4af37" stroke-width="2" stroke-dasharray="3 2" />
+      <path d="M22 25 L38 25 L44 38 L16 38 Z" fill="#aa7a1e" stroke="#d4af37" stroke-width="1.5" />
+      <path d="M16 38 L44 38 L48 72 L12 72 Z" fill="rgba(6, 78, 59, 0.6)" stroke="#d4af37" stroke-width="1.5" />
+      <!-- Glass panes & inner light -->
+      <line x1="26" y1="38" x2="24" y2="72" stroke="#fbe58a" stroke-width="1" />
+      <line x1="34" y1="38" x2="36" y2="72" stroke="#fbe58a" stroke-width="1" />
+      <circle cx="30" cy="55" r="9" fill="#fbbf24" class="lantern-light" />
+      <path d="M12 72 L48 72 L38 88 L22 88 Z" fill="#aa7a1e" stroke="#d4af37" stroke-width="1.5" />
+      <path d="M30 88 L30 102" stroke="#d4af37" stroke-width="2" />
+      <circle cx="30" cy="106" r="4" fill="#f3c64c" />
+    </svg>
+  </div>
+
+  <div class="fanoos-container fanoos-right" aria-hidden="true">
+    <svg class="lantern-svg" viewBox="0 0 60 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="30" y1="0" x2="30" y2="35" stroke="#d4af37" stroke-width="2" stroke-dasharray="3 2" />
+      <path d="M22 35 L38 35 L44 48 L16 48 Z" fill="#aa7a1e" stroke="#d4af37" stroke-width="1.5" />
+      <path d="M16 48 L44 48 L48 82 L12 82 Z" fill="rgba(6, 78, 59, 0.6)" stroke="#d4af37" stroke-width="1.5" />
+      <line x1="26" y1="48" x2="24" y2="82" stroke="#fbe58a" stroke-width="1" />
+      <line x1="34" y1="48" x2="36" y2="82" stroke="#fbe58a" stroke-width="1" />
+      <circle cx="30" cy="65" r="9" fill="#fbbf24" class="lantern-light" />
+      <path d="M12 82 L48 82 L38 98 L22 98 Z" fill="#aa7a1e" stroke="#d4af37" stroke-width="1.5" />
+      <path d="M30 98 L30 112" stroke="#d4af37" stroke-width="2" />
+      <circle cx="30" cy="116" r="4" fill="#f3c64c" />
+    </svg>
+  </div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#hero" class="nav-brand">
+          <div class="brand-emblem">MHB</div>
+          <div>
+            <div class="brand-name">Hazi Moinuddin</div>
+            <div class="brand-sub">Biodata Portfolio</div>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#gallery" class="nav-link">Photographs</a></li>
+          <li><a href="#download" class="nav-link">Download Biodata</a></li>
+          <li><a href="#biodata" class="nav-link">Biodata Details</a></li>
+          <li><a href="#education" class="nav-link">Academic Career</a></li>
+          <li><a href="#family" class="nav-link">Family</a></li>
+          <li><a href="#contact" class="nav-link">Connect</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Audio Ambience Toggle -->
+          <button id="ambient-audio-toggle" class="btn btn-icon-only" title="Toggle Tranquil Audio Chime" aria-label="Toggle Sound">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <line x1="23" y1="9" x2="17" y2="15"></line>
+              <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button id="theme-toggle-btn" class="btn btn-icon-only" title="Toggle Emerald / Midnight Theme" aria-label="Toggle Theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+
+          <!-- Direct Download Biodata Button -->
+          <a href="assets/images/biodata_card.jpg" download="Mohammad_Hazi_Moinuddin_Basha_Biodata.jpg" class="btn btn-gold" title="Download Official Biodata Image">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Biodata</span>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" class="hamburger-btn" aria-label="Open Navigation Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Islamic Bismillah Calligraphy Banner -->
+  <section class="islamic-arch-header" aria-label="Bismillah">
+    <div class="container">
+      <div class="arabic-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+      <p style="font-size: 0.95rem; color: var(--gold-light); font-style: italic; letter-spacing: 0.05em;">
+        In the name of Allah, the Most Gracious, the Most Merciful
+      </p>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Column: Biography & Key Highlights -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Matrimonial Profile • Sunni Muslim</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="gold-gradient-text">Mohammad Hazi</span><br>
+            <span>Moinuddin Basha</span>
+          </h1>
+
+          <div class="hero-role">
+            <span class="hero-role-badge">Assistant Professor</span>
+            <span>at</span>
+            <span style="color: #ffffff; font-weight: 700;">VIT-AP University</span>
+          </div>
+
+          <p class="hero-bio">
+            A dynamic academician and doctoral researcher possessing a blend of strong Islamic moral values, cultural dignity, and high educational achievements. Dedicated to engineering education and scholarly research.
+          </p>
+
+          <!-- Quick Metrics Grid -->
+          <div class="hero-stats-row">
+            <div class="stat-chip">
+              <div class="stat-chip-label">Date of Birth</div>
+              <div class="stat-chip-val">30 Nov 1997</div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-label">Height</div>
+              <div class="stat-chip-val">5' 11" (180 cm)</div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-label">Education</div>
+              <div class="stat-chip-val">B.Tech, M.Tech, Ph.D. [Pursuing]</div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-label">Native / City</div>
+              <div class="stat-chip-val">Eluru / Kakinada</div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="assets/images/biodata_card.jpg" download="Mohammad_Hazi_Moinuddin_Basha_Biodata.jpg" class="btn btn-gold">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Official Biodata</span>
+            </a>
+
+            <a href="#gallery" class="btn btn-outline-gold">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>View Photos (2)</span>
+            </a>
+
+            <button class="btn btn-outline-gold copy-biodata-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Biodata Text</span>
+            </button>
+
+            <a href="#contact" class="btn btn-outline-gold">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Contact Family</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive 3D Spotlight Photo Frame -->
+        <div class="hero-visual-card">
+          <div class="hero-photo-wrapper tilt-card">
+            
+            <!-- Floating Highlights -->
+            <div class="floating-badge floating-badge-1">
+              <span class="badge-icon">🎓</span>
+              <span id="floating-badge-role">Asst. Professor • Ph.D. [Pursuing]</span>
+            </div>
+
+            <div class="floating-badge floating-badge-2">
+              <span class="badge-icon">⭐</span>
+              <span>5' 11" • Fair Complexion</span>
+            </div>
+
+            <!-- Spotlight Image -->
+            <div class="hero-photo-inner">
+              <img id="hero-spotlight-img" class="hero-photo-img" src="assets/images/photo_formal.jpg" alt="Mohammad Hazi Moinuddin Basha - Assistant Professor">
+              
+              <!-- Zoom trigger -->
+              <button id="hero-zoom-trigger" class="gallery-zoom-btn" style="opacity: 1;" aria-label="Enlarge Photo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Photo switcher pills -->
+          <div class="hero-photo-switcher">
+            <button class="switcher-tab active" data-photo="formal">1. Academic & Campus</button>
+            <button class="switcher-tab" data-photo="beach">2. Lifestyle Portrait</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-subtitle">Visual Portfolio</div>
+        <h2 class="section-title">Photographs & Personal Gallery</h2>
+        <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto;">
+          High-resolution personal and professional photographs of Mohammad Hazi Moinuddin Basha.
+        </p>
+        <div class="section-divider">
+          <span class="divider-line"></span>
+          <span class="rub-el-hizb-icon">۞</span>
+          <span class="divider-line"></span>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        
+        <!-- Card 1: Academic / Faculty Life -->
+        <div class="gallery-card glass-card tilt-card" data-index="0">
+          <div class="gallery-card-img-wrapper">
+            <img class="gallery-card-img" src="assets/images/photo_formal.jpg" alt="Assistant Professor Mohammad Hazi Moinuddin Basha at University Campus">
+            <div class="gallery-zoom-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </div>
+            <div class="gallery-card-overlay">
+              <span class="gallery-tag">Academic & Professional</span>
+              <h3 class="gallery-card-title">Campus & Faculty Life</h3>
+              <p class="gallery-card-desc">Serving as Assistant Professor at VIT-AP University Amaravati with dedication to teaching and scholarly research.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Lifestyle & Casual -->
+        <div class="gallery-card glass-card tilt-card" data-index="1">
+          <div class="gallery-card-img-wrapper">
+            <img class="gallery-card-img" src="assets/images/photo_beach.jpg" alt="Mohammad Hazi Moinuddin Basha Casual Outdoor Portrait">
+            <div class="gallery-zoom-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </div>
+            <div class="gallery-card-overlay">
+              <span class="gallery-tag">Lifestyle & Personality</span>
+              <h3 class="gallery-card-title">Warm & Joyful Demeanor</h3>
+              <p class="gallery-card-desc">Outgoing, nature enthusiast with a warm smile, positive outlook, and balanced lifestyle.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dedicated Official Biodata Download Section -->
+  <section id="download" class="download-section">
+    <div class="container">
+      <div class="download-banner glass-card">
+        <div class="download-banner-content">
+          <div class="download-icon-emblem">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <polyline points="9 15 12 18 15 15"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="section-subtitle" style="justify-content: flex-start;">Verified Matrimonial Document</div>
+            <h3 class="gold-gradient-text" style="font-size: 1.85rem; margin-bottom: 0.4rem;">Download Official Verified Biodata</h3>
+            <p style="color: #cbd5e1; max-width: 650px; font-size: 0.98rem; line-height: 1.6;">
+              The official Islamic matrimonial biodata with complete family lineage, educational qualifications, and residence particulars is available for direct download.
+            </p>
+          </div>
+        </div>
+
+        <div class="download-actions-grid">
+          <!-- Direct High-Res Image Download -->
+          <a href="assets/images/biodata_card.jpg" download="Mohammad_Hazi_Moinuddin_Basha_Biodata.jpg" class="btn btn-gold download-btn-lg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <div>
+              <div style="font-size: 0.95rem; font-weight: 700;">Download Official Biodata</div>
+              <div style="font-size: 0.72rem; opacity: 0.85;">High-Definition Poster (JPG)</div>
+            </div>
+          </a>
+
+          <!-- Print / Save as PDF -->
+          <button class="btn btn-outline-gold print-biodata-btn download-btn-lg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <div>
+              <div style="font-size: 0.95rem; font-weight: 700;">Download as PDF / Print</div>
+              <div style="font-size: 0.72rem; opacity: 0.85;">Print-Ready Document Format</div>
+            </div>
+          </button>
+
+          <!-- On-demand Modal Preview -->
+          <button id="preview-biodata-btn" class="btn btn-outline-gold download-btn-lg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="11" y1="8" x2="11" y2="14"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+            <div>
+              <div style="font-size: 0.95rem; font-weight: 700;">Preview Document</div>
+              <div style="font-size: 0.72rem; opacity: 0.85;">Inspect in Fullscreen Lightbox</div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- Detailed Biodata Section with Filter Tabs -->
+  <section id="biodata" class="biodata-section">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-subtitle">Comprehensive Profile</div>
+        <h2 class="section-title">Matrimonial Biodata Particulars</h2>
+        <p style="color: #cbd5e1; max-width: 620px; margin: 0 auto;">
+          Verified and accurate information organized systematically for prospective families.
+        </p>
+        <div class="section-divider">
+          <span class="divider-line"></span>
+          <span class="rub-el-hizb-icon">۞</span>
+          <span class="divider-line"></span>
+        </div>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="biodata-tabs">
+        <button class="bio-tab-btn active" data-tab="all">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span>All Information</span>
+        </button>
+        <button class="bio-tab-btn" data-tab="personal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Personal Attributes</span>
+        </button>
+        <button class="bio-tab-btn" data-tab="education">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+          <span>Academic & Career</span>
+        </button>
+        <button class="bio-tab-btn" data-tab="family">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>Family Background</span>
+        </button>
+        <button class="bio-tab-btn" data-tab="address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Residence & Native</span>
+        </button>
+        <button class="bio-tab-btn" data-tab="preferences">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span>Partner Preferences</span>
+        </button>
+      </div>
+
+      <!-- Tab Panes -->
+
+      <!-- TAB 1: Personal Attributes -->
+      <div id="tab-personal" class="bio-tab-pane active" style="margin-bottom: 2.5rem;">
+        <h3 class="font-royal" style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--gold-light); display: flex; align-items: center; gap: 0.6rem;">
+          <span>👤</span> Personal & Physical Attributes
+        </h3>
+        <div class="details-grid">
+          
+          <div class="detail-item-card">
+            <div class="detail-icon-box">🏷️</div>
+            <div class="detail-meta">
+              <div class="detail-label">Full Name</div>
+              <div class="detail-value">Mohammad Hazi Moinuddin Basha</div>
+              <div class="detail-subvalue">Commonly known as Hazi Moinuddin</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">📅</div>
+            <div class="detail-meta">
+              <div class="detail-label">Date of Birth & Age</div>
+              <div class="detail-value">30th November 1997 (~28 Years)</div>
+              <div class="detail-subvalue">Born in 1997 • Sagittarius</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">📍</div>
+            <div class="detail-meta">
+              <div class="detail-label">Place of Birth</div>
+              <div class="detail-value">Kakinada, Andhra Pradesh</div>
+              <div class="detail-subvalue">Coastal Andhra Region</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">🕌</div>
+            <div class="detail-meta">
+              <div class="detail-label">Religion & Sect</div>
+              <div class="detail-value">Muslim (Sunni)</div>
+              <div class="detail-subvalue">Practicing, respectful of Islamic traditions & ethics</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">📏</div>
+            <div class="detail-meta">
+              <div class="detail-label">Height</div>
+              <div class="detail-value">5 feet 11 inches (180 cm)</div>
+              <div class="detail-subvalue">Tall & Athletic Persona</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">✨</div>
+            <div class="detail-meta">
+              <div class="detail-label">Complexion & Physique</div>
+              <div class="detail-value">Fair Complexion</div>
+              <div class="detail-subvalue">Healthy, active lifestyle</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">🗣️</div>
+            <div class="detail-meta">
+              <div class="detail-label">Mother Tongue & Languages</div>
+              <div class="detail-value">Urdu, Telugu & English</div>
+              <div class="detail-subvalue">Fluent in professional academic English</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">💍</div>
+            <div class="detail-meta">
+              <div class="detail-label">Marital Status</div>
+              <div class="detail-value">Never Married</div>
+              <div class="detail-subvalue">Seeking first marriage with noble intentions</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB 2: Education & Career Spotlight -->
+      <div id="tab-education" class="bio-tab-pane active" style="margin-bottom: 2.5rem;">
+        <h3 class="font-royal" style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--gold-light); display: flex; align-items: center; gap: 0.6rem;">
+          <span>🎓</span> Academic Qualifications & Professional Career
+        </h3>
+        
+        <div class="details-grid">
+          <div class="detail-item-card">
+            <div class="detail-icon-box">💼</div>
+            <div class="detail-meta">
+              <div class="detail-label">Current Occupation</div>
+              <div class="detail-value">Assistant Professor</div>
+              <div class="detail-subvalue">Faculty member engaged in teaching & research</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">🏛️</div>
+            <div class="detail-meta">
+              <div class="detail-label">Organization Name</div>
+              <div class="detail-value">VIT-AP University Amaravati</div>
+              <div class="detail-subvalue">Premier Institution of Eminence in Andhra Pradesh</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">🎓</div>
+            <div class="detail-meta">
+              <div class="detail-label">Undergraduate Degree</div>
+              <div class="detail-value">B.Tech. (Bachelor of Technology)</div>
+              <div class="detail-subvalue">Graduated with strong technical & engineering foundation</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">📜</div>
+            <div class="detail-meta">
+              <div class="detail-label">Postgraduate Degree</div>
+              <div class="detail-value">M.Tech. (Master of Technology)</div>
+              <div class="detail-subvalue">Post-Graduate Engineering Degree with distinction</div>
+            </div>
+          </div>
+
+          <div class="detail-item-card">
+            <div class="detail-icon-box">🔬</div>
+            <div class="detail-meta">
+              <div class="detail-label">Doctoral Research</div>
+              <div class="detail-value">Ph.D. [Pursuing]</div>
+              <div class="detail-subvalue">Advanced academic doctorate research scholar</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Banner Highlight -->
+        <div class="academic-highlight-banner">
+          <div class="academic-logo-box">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <div class="academic-info">
+            <h3 class="gold-gradient-text">VIT-AP University Amaravati Faculty Member</h3>
+            <p>
+              Holding a prestigious teaching post as an Assistant Professor while simultaneously pursuing doctoral research (Ph.D.). VIT-AP is among India's top university systems, ensuring high job security, intellectual growth, and professional prestige.
+            </p>
+          </div>
+          <div>
+            <a href="https://vitap.ac.in" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold" style="font-size: 0.85rem;">
+              <span>About Institution</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TAB 3: Family Background -->
+      <div id="tab-family" class="bio-tab-pane active" style="margin-bottom: 2.5rem;">
+        <h3 class="font-royal" style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--gold-light); display: flex; align-items: center; gap: 0.6rem;">
+          <span>🏡</span> Family Background & Lineage
+        </h3>
+
+        <div class="family-tree-grid">
+          
+          <div class="glass-card family-member-card">
+            <div class="family-avatar">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="family-relation">Father</div>
+            <div class="family-name">Md Mahaboob Basha</div>
+            <div class="family-status">Respected head of the family, rooted in community respect and Islamic ethics.</div>
+          </div>
+
+          <div class="glass-card family-member-card">
+            <div class="family-avatar">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="family-relation">Mother</div>
+            <div class="family-name">MD Parvin</div>
+            <div class="family-status">Loving homemaker and guiding soul, upholding warmth and moral integrity.</div>
+          </div>
+
+          <div class="glass-card family-member-card">
+            <div class="family-avatar">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="family-relation">Siblings</div>
+            <div class="family-name">1 Sister</div>
+            <div class="family-status">Married and well-settled with a respectable family.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB 4: Residence & Address Details -->
+      <div id="tab-address" class="bio-tab-pane active" style="margin-bottom: 2.5rem;">
+        <h3 class="font-royal" style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--gold-light); display: flex; align-items: center; gap: 0.6rem;">
+          <span>📍</span> Residence & Native Locations
+        </h3>
+
+        <div class="glass-card" style="padding: 2rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            
+            <div>
+              <div class="detail-label" style="font-size: 0.85rem; color: var(--gold-bright);">Permanent Family Residence</div>
+              <h4 style="font-size: 1.35rem; color: #ffffff; margin: 0.5rem 0 0.75rem;">
+                Ramachandra Towers, Flat No. 402
+              </h4>
+              <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.6;">
+                Near Gandhi Maidyanam,<br>
+                Padamara Veedhi, <strong>Eluru</strong>,<br>
+                Andhra Pradesh, India
+              </p>
+              
+              <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://maps.google.com/?q=Eluru+Gandhi+Maidyanam" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold" style="font-size: 0.85rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                    <line x1="9" y1="3" x2="9" y2="18"></line>
+                    <line x1="15" y1="6" x2="15" y2="21"></line>
+                  </svg>
+                  <span>Locate Eluru on Map</span>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="detail-label" style="font-size: 0.85rem; color: var(--gold-bright);">Workplace & University Campus</div>
+              <h4 style="font-size: 1.35rem; color: #ffffff; margin: 0.5rem 0 0.75rem;">
+                VIT-AP University Campus
+              </h4>
+              <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.6;">
+                Beside AP Secretariat, Near Inavolu,<br>
+                <strong>Amaravati Capital Region</strong>,<br>
+                Andhra Pradesh, India
+              </p>
+
+              <div style="margin-top: 1.5rem;">
+                <a href="https://maps.google.com/?q=VIT-AP+University" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold" style="font-size: 0.85rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Locate VIT-AP Campus</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 5: Partner Preferences -->
+      <div id="tab-preferences" class="bio-tab-pane active" style="margin-bottom: 2.5rem;">
+        <h3 class="font-royal" style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--gold-light); display: flex; align-items: center; gap: 0.6rem;">
+          <span>🕊️</span> Partner Expectations & Match Preferences
+        </h3>
+
+        <div class="preference-list">
+          
+          <div class="preference-item">
+            <span class="pref-bullet">✦</span>
+            <div>
+              <strong style="color: #ffffff; display: block; margin-bottom: 0.2rem;">Religious & Moral Values</strong>
+              <span style="color: #cbd5e1; font-size: 0.92rem;">Practicing Sunni Muslim bride with sincere Islamic values, modesty, and family dedication.</span>
+            </div>
+          </div>
+
+          <div class="preference-item">
+            <span class="pref-bullet">✦</span>
+            <div>
+              <strong style="color: #ffffff; display: block; margin-bottom: 0.2rem;">Educational Background</strong>
+              <span style="color: #cbd5e1; font-size: 0.92rem;">Well-educated (Graduate / Post-Graduate / Professional Degree) who values knowledge and personal development.</span>
+            </div>
+          </div>
+
+          <div class="preference-item">
+            <span class="pref-bullet">✦</span>
+            <div>
+              <strong style="color: #ffffff; display: block; margin-bottom: 0.2rem;">Mutual Respect & Understanding</strong>
+              <span style="color: #cbd5e1; font-size: 0.92rem;">A supportive life partner believing in mutual friendship, love, emotional harmony, and joint family respect.</span>
+            </div>
+          </div>
+
+          <div class="preference-item">
+            <span class="pref-bullet">✦</span>
+            <div>
+              <strong style="color: #ffffff; display: block; margin-bottom: 0.2rem;">Cultural & Family Harmony</strong>
+              <span style="color: #cbd5e1; font-size: 0.92rem;">Respectable Sunni Muslim family background from Andhra Pradesh / Telangana or willing to relocate.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Quranic Blessing Banner -->
+  <section class="container" style="margin-bottom: 4rem;">
+    <div class="glass-card" style="padding: 2.5rem; text-align: center; border-color: rgba(212, 175, 55, 0.45);">
+      <div class="arabic-bismillah" style="font-size: 2rem; margin-bottom: 1rem;">
+        رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+      </div>
+      <p class="dua-quote">
+        "Our Lord, grant us from among our spouses and offspring comfort to our eyes and make us a leader for the righteous."
+      </p>
+      <div style="font-size: 0.85rem; color: var(--gold-bright); letter-spacing: 0.08em; text-transform: uppercase;">
+        — Surah Al-Furqan (25:74)
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Family Inquiry Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-subtitle">Get In Touch</div>
+        <h2 class="section-title">Connect with the Family</h2>
+        <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto;">
+          Families interested in proceeding with matrimonial discussions are warmly invited to get in touch.
+        </p>
+        <div class="section-divider">
+          <span class="divider-line"></span>
+          <span class="rub-el-hizb-icon">۞</span>
+          <span class="divider-line"></span>
+        </div>
+      </div>
+
+      <div class="contact-box glass-card">
+        
+        <!-- Left details -->
+        <div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 0.75rem;" class="gold-gradient-text">Respectful Inquiries</h3>
+          <p style="color: #cbd5e1; font-size: 0.98rem; line-height: 1.6;">
+            We welcome direct communication from respected elders and family members. You may share proposal details, photographs, or horoscopes/biodatas directly via WhatsApp or phone call.
+          </p>
+
+          <div class="contact-details-list">
+            
+            <div class="contact-info-row">
+              <div class="detail-icon-box">📍</div>
+              <div>
+                <div class="detail-label">Family Residence</div>
+                <div style="color: #ffffff; font-weight: 600;">Ramachandra Towers, Flat No 402, Near Gandhi Maidyanam, Padamara Veedhi, Eluru, A.P.</div>
+              </div>
+            </div>
+
+            <div class="contact-info-row">
+              <div class="detail-icon-box">🏛️</div>
+              <div>
+                <div class="detail-label">Current Workplace</div>
+                <div style="color: #ffffff; font-weight: 600;">VIT-AP University, Amaravati, Andhra Pradesh</div>
+              </div>
+            </div>
+
+            <div class="contact-info-row">
+              <div class="detail-icon-box">💬</div>
+              <div>
+                <div class="detail-label">Quick Share / WhatsApp</div>
+                <div style="color: #ffffff; font-weight: 600;">Share this portfolio profile with family elders instantly</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top: 2rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <button class="btn btn-gold whatsapp-share-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span>Share on WhatsApp</span>
+            </button>
+
+            <button class="btn btn-outline-gold copy-biodata-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Full Text</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right Quick Message / Inquiry Form -->
+        <form id="inquiry-form" class="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="sender-name">Your Full Name / Elder's Name</label>
+            <input type="text" id="sender-name" class="form-input" placeholder="e.g. Md. Abdul Rahman" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sender-city">Your City / Native Region</label>
+            <input type="text" id="sender-city" class="form-input" placeholder="e.g. Vijayawada, Hyderabad, Guntur" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sender-msg">Message or Proposal Brief</label>
+            <textarea id="sender-msg" class="form-textarea" rows="4" placeholder="Assalamu Alaykum, we are reaching out regarding the matrimonial profile of Mohammad Hazi Moinuddin Basha..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 0.5rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            <span>Send Direct WhatsApp Message</span>
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sticky Quick Action Dock -->
+  <aside class="sticky-action-dock" aria-label="Quick Actions">
+    <a href="assets/images/biodata_card.jpg" download="Mohammad_Hazi_Moinuddin_Basha_Biodata.jpg" class="btn btn-gold" title="Download Official Biodata Image">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      <span>Download Biodata</span>
+    </a>
+
+    <button class="btn btn-outline-gold print-biodata-btn" title="Download Biodata as PDF">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+        <rect x="6" y="14" width="12" height="8"></rect>
+      </svg>
+      <span>PDF / Print</span>
+    </button>
+
+    <button class="btn btn-outline-gold copy-biodata-btn" title="Copy Biodata Text">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+      <span>Copy Details</span>
+    </button>
+
+    <button class="btn btn-gold whatsapp-share-btn" title="Share Profile on WhatsApp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+      <span>WhatsApp</span>
+    </button>
+  </aside>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <div class="lightbox-content-box">
+      <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+      <button id="lightbox-prev" class="lightbox-nav-btn lightbox-prev" aria-label="Previous Photo">&#10094;</button>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged view">
+      <button id="lightbox-next" class="lightbox-nav-btn lightbox-next" aria-label="Next Photo">&#10095;</button>
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notice Container -->
+  <div class="toast-notice" role="status" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="footer-wrap">
+    <div class="container">
+      <div class="arabic-bismillah" style="font-size: 1.8rem; margin-bottom: 0.5rem;">بارك الله لكما وبارك عليكما</div>
+      <p style="color: #cbd5e1; margin-bottom: 1rem;">
+        May Allah bless this union and shower blessings upon you and unite you in goodness.
+      </p>
+      <p style="font-size: 0.8rem; color: #64748b;">
+        © 2026 Mohammad Hazi Moinuddin Basha. All rights reserved. • Eluru & Amaravati, Andhra Pradesh.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
